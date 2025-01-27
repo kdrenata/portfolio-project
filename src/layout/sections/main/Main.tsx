@@ -10,7 +10,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-between'}>
+                <FlexWrapper align={'center'} justify={'space-between'} wrap={'wrap'}>
                     <WrapperBlock>
                         <Text>Hello</Text>
                         <Name>I’m Renata Kudinova</Name>
@@ -29,19 +29,19 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-    min-height: 50vh;
+    min-height: 780px;
     background-color: ${theme.colors.secondaryBg};
     display: flex;
     justify-content: space-between;
 `
 const WrapperBlock = styled.div`
-    width: 447px;
-    height: 377px;
+    margin-top: 100px;
+    max-width: 448px;
     display: flex;
     flex-direction: column;
     text-align: start;
     gap: 10px;
-    
+    border: 1px solid red;
     
 `
 const Text = styled.span`
@@ -74,36 +74,41 @@ const MainTitle = styled.h1`
 `
 
 const WrapperImage = styled.div`
+    width: 632px;
+    height: 674px;
+    bottom: -100px;
+    align-self: flex-end;
     position: relative;
+    border: 1px solid red;
 `
 
 const Avatar = styled.img`
-    width: 400px;
-    height: 545px;
+    height: 100%;
+    flex-shrink: 0;
     object-fit: cover;
+    
     position: relative;
-    bottom: 10%;
-    right: -3%;
     z-index: 1;
 `
 
 const MainEllipse = styled.img`
+    object-fit: cover;
     position: absolute;
-    top: -15%;
-    right: -42%;
-    width: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 `
 const StyledBtn = styled.button`
     width: 200px;
     height: 47px;
-    font-size: 15px;
-    font-weight: 400;
-    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 700;
     border-radius: 6px;
-    background: linear-gradient(87deg, #00C4F0 4.47%, #00C4F0 95.53%);
-    box-shadow: 0px 2px 13px 0px rgba(43, 184, 209, 0.48);
+    //background: linear-gradient(87deg, #00C4F0 4.47%, #00C4F0 95.53%);
+    //box-shadow: 0px 2px 13px 0px rgba(43, 184, 209, 0.48);
+    background: var(--orange, linear-gradient(87deg, #E2A300 4.47%, #E29500 95.53%));
+    box-shadow: 0px 2px 13px 0px rgba(226, 158, 0, 0.48);
     text-transform: uppercase;
-    color: #3a2b2b;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     

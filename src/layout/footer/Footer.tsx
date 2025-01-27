@@ -24,7 +24,9 @@ export const Footer = () => {
                     <SocialLink>
                         <FlexWrapper justify={'space-between'} style={{width:'100%'}} align={'center'}>
                             <Icon iconId={'code'}/>
-                            <Icon iconId={'circle-top'} viewBox={'0 0 60 60'}/>
+                            <Btn>
+                                <Icon iconId={'arrow-top'} width={'36'} height={'36'} viewBox={'0 0 36 36'}/>
+                            </Btn>
                         </FlexWrapper>
                         <Copyright>Copyright © 2025 Renata Kudinova</Copyright>
                     </SocialLink>
@@ -82,4 +84,13 @@ const Copyright = styled.small`
     text-align: right;
     opacity: 0.3;
     
+`
+const Btn = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
 `

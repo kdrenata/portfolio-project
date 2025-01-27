@@ -3,11 +3,9 @@ import styled from "styled-components";
 import styledOne from '../../../assets/images/photo1_1.webp';
 import styledTwo from '../../../assets/images/photo2.webp';
 import styledTree from '../../../assets/images/photo3_1.webp';
-import ellipseWhite from '../../../assets/images/ellipse-white.webp';
-import ellipseYellow from '../../../assets/images/ellipse-yellow.webp';
-import ellipseBlue from '../../../assets/images/ellipse-blue.webp';
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Container} from "../../../components/Container.tsx";
+import ellipseWhite from "../../../assets/images/ellipse-white.svg"
 
 
 
@@ -18,11 +16,11 @@ export const Profile = () => {
                 <FlexWrapper>
                     <ProfileWrapper>
                         <StyledLeft>
-                            <BorderPhoto right={'-23px'}>
+                            <BorderPhoto right={'47px'}>
                                 <StyledOne src={styledOne} alt=''/>
                             </BorderPhoto>
-                            <EllipseWhite src={ellipseWhite} alt=''/>
-                            <BorderPhoto right={'-23px'} bottom={'-45px'}>
+
+                            <BorderPhoto right={'35px'} bottom={'-43px'}>
                                 <StyledTwo src={styledTwo} alt=''/>
                             </BorderPhoto>
                         </StyledLeft>
@@ -33,15 +31,14 @@ export const Profile = () => {
                                 Why did I choose programming? It’s simple — this field combines creativity and cutting-edge technology while offering endless opportunities for growth. I also dream of traveling the world, and being a developer allows me to work from anywhere while constantly learning and creating innovative solutions.
                                 I specialize in frontend development and learning design, with a focus on creating unique and high-quality projects. I approach every task with responsibility and great attention to detail, ensuring I understand the client’s needs and audience to deliver the best results.
                                 If you’re looking for someone who works with dedication, passion, and precision, I’d love to help bring your ideas to life. Feel free to reach out if you want to know more about me or are interested in my services. I look forward to working with you!</StyledText>
-                            <EllipseYellow src={ellipseYellow} alt=''/>
                         </StyledCenter>
 
                         <StyledRight>
-                            <BorderPhoto left={'-23px'}>
+                            <BorderPhoto left={'-95px'}>
                                 <StyledTree src={styledTree} alt=''/>
                             </BorderPhoto>
-                            <EllipseBlue src={ellipseBlue} alt=''/>
                         </StyledRight>
+
                     </ProfileWrapper>
                 </FlexWrapper>
             </Container>
@@ -50,11 +47,13 @@ export const Profile = () => {
     );
 };
 const StyledProfile = styled.section`
-    min-height: 80vh;
+    padding: 100px 0 300px;
     position: relative;
 `
 const ProfileWrapper = styled.div`
     display: flex;
+    position: relative;
+    right: -5%;
 `
 const StyledLeft = styled.div`
     display: flex;
@@ -63,6 +62,21 @@ const StyledLeft = styled.div`
     align-items: center;
     position: relative;
     left: 8%;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 792px;
+        height: 792px;
+        position: absolute;
+        top: 100px;
+        right: -190px;
+        //border-radius: 50%;
+        border-radius: 792px;
+        border: 89px solid #E4E4E4;
+        box-shadow: 0px 4px 70px 0px rgba(255, 255, 255, 0.25);
+    }
+    
 `
 const StyledCenter = styled.div`
     //box-shadow: 0px 4px 6px 1px #2C2C2C;
@@ -71,8 +85,20 @@ const StyledCenter = styled.div`
     flex-direction: column;
     gap: 30px;
     position: relative;
-    left: 6%;
     z-index: 1;
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 356px;
+        height: 356px;
+        position: absolute;
+        top: 48px;
+        right: -256px;
+        border-radius: 356px;
+        border: 34px solid #E2A200;
+        box-shadow: 0 4px 70px 0 rgba(226, 162, 0, 0.25);
+    }
 `
 const StyledRight = styled.div`
     display: flex;
@@ -81,15 +107,29 @@ const StyledRight = styled.div`
     align-items: center;
     position: relative;
     left: 4%;
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 486px;
+        height: 486px;
+        position: absolute;
+        top: 600px;
+        right: 110px;
+        //border-radius: 50%;
+        border-radius: 486px;
+        border: 55px solid var(--blu, #00C4F0);
+        box-shadow: 0px 4px 70px 0px rgba(0, 193, 236, 0.25);
+    }
 `
 const BorderPhoto = styled.div<{right?: string, left?: string, bottom?: string }>`
     right: ${props => props.right || 'auto'};
     left: ${props => props.left || 'auto'};
     bottom: ${props => props.bottom || 'auto'};
-    padding: 25px;
+    padding: 29px;
     border-radius: 14px;
     background-color: #2C2C2C;
-    box-shadow: 1px 4px 6px 1px #2C2C2C;
+    box-shadow: 1px 4px 6px 5px #2C2C2C;
     position: relative;
     z-index: 3;
 `
@@ -107,7 +147,7 @@ const SectionTitle = styled.h2`
 const StyledText = styled.p`
     display: flex;
     background-color: #2C2C2C;
-    box-shadow: 0px 4px 6px 1px #2C2C2C;
+    box-shadow: 1px 4px 6px 5px #2C2C2C;
     border-radius: 14px;
     font-weight: 300;
     line-height: normal;
@@ -123,6 +163,7 @@ const StyledOne= styled.img`
     height: 320px;
     object-fit: cover;
     box-shadow: 0px 0px 0px 6px #686868;
+
 `
 const StyledTwo = styled.img`
     width: 250px;
@@ -137,25 +178,4 @@ const StyledTree = styled.img`
     object-fit: cover;
     box-shadow: 0px 0px 0px 6px #686868;
     
-`
-const EllipseWhite = styled.img`
-    width: 800px;
-    object-fit: cover;
-    position: absolute;
-    left: -72%;
-    top: 67px;
-`
-const EllipseYellow = styled.img`
-    width: 480px;
-    position: absolute;
-    right: -71%;
-    top: -4%;
-    
-`
-const EllipseBlue = styled.img`
-    width: 650px;
-    position: absolute;
-    bottom: -180px;
-    top: 53%;
-    right: -7%;
 `

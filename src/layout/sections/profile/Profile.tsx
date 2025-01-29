@@ -1,11 +1,9 @@
-
 import styled from "styled-components";
 import styledOne from '../../../assets/images/photo1_1.webp';
 import styledTwo from '../../../assets/images/photo2.webp';
 import styledTree from '../../../assets/images/photo3_1.webp';
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Container} from "../../../components/Container.tsx";
-import ellipseWhite from "../../../assets/images/ellipse-white.svg"
 
 
 
@@ -74,7 +72,7 @@ const StyledLeft = styled.div`
         //border-radius: 50%;
         border-radius: 792px;
         border: 89px solid #E4E4E4;
-        box-shadow: 0px 4px 70px 0px rgba(255, 255, 255, 0.25);
+        box-shadow: 0 4px 70px 0 rgba(255, 255, 255, 0.25);
     }
     
 `
@@ -118,8 +116,8 @@ const StyledRight = styled.div`
         right: 110px;
         //border-radius: 50%;
         border-radius: 486px;
-        border: 55px solid var(--blu, #00C4F0);
-        box-shadow: 0px 4px 70px 0px rgba(0, 193, 236, 0.25);
+        border: 55px solid #00C4F0;
+        box-shadow: 0 4px 70px 0 rgba(0, 193, 236, 0.25);
     }
 `
 const BorderPhoto = styled.div<{right?: string, left?: string, bottom?: string }>`
@@ -162,20 +160,20 @@ const StyledOne= styled.img`
     width: 272px;
     height: 320px;
     object-fit: cover;
-    box-shadow: 0px 0px 0px 6px #686868;
+    box-shadow: 0 0 0 6px #686868;
 
 `
 const StyledTwo = styled.img`
     width: 250px;
     height: 325px;
     object-fit: cover;
-    box-shadow: 0px 0px 0px 6px #686868;
+    box-shadow: 0 0 0 6px #686868;
     
 `
 const StyledTree = styled.img`
     width: 287px;
     height: 427px;
     object-fit: cover;
-    box-shadow: 0px 0px 0px 6px #686868;
+    box-shadow: 0 0 0 6px #686868;
     
 `

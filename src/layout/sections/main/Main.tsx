@@ -1,10 +1,11 @@
-
 import styled from "styled-components";
 import photo from '../../../assets/images/Iam.webp'
 import ellipse from '../../../assets/images/ellipse.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Container} from "../../../components/Container.tsx";
 import {theme} from "../../../styles/Theme.tsx";
+
+import {Circle} from "../../../components/circle/Circle.tsx";
 
 export const Main = () => {
     return (
@@ -21,6 +22,10 @@ export const Main = () => {
                     <WrapperImage>
                         <Avatar src={photo} alt=''/>
                         <MainEllipse src={ellipse} alt=''/>
+                     <Circle src={'reactGray'} top={'15%' } left={'7%'}/>
+                     <Circle src={'htmlGray'} top={'38%' } left={'-2%'}/>
+                     <Circle src={'cssGray'} top={'63%' } left={'2%'}/>
+                     <Circle src={'figmaGray'} top={'10%' } right={'13%'}/>
                     </WrapperImage>
                 </FlexWrapper>
             </Container>
@@ -35,13 +40,13 @@ const StyledMain = styled.section`
     justify-content: space-between;
 `
 const WrapperBlock = styled.div`
-    margin-top: 100px;
+    margin-top: 200px;
     max-width: 448px;
     display: flex;
     flex-direction: column;
     text-align: start;
     gap: 10px;
-    border: 1px solid red;
+    //border: 1px solid red;
     
 `
 const Text = styled.span`
@@ -79,6 +84,7 @@ const WrapperImage = styled.div`
     bottom: -100px;
     align-self: flex-end;
     position: relative;
+    left: 80px;
     border: 1px solid red;
 `
 
@@ -94,7 +100,7 @@ const Avatar = styled.img`
 const MainEllipse = styled.img`
     object-fit: cover;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
 `
@@ -106,7 +112,7 @@ const StyledBtn = styled.button`
     border-radius: 6px;
     //background: linear-gradient(87deg, #00C4F0 4.47%, #00C4F0 95.53%);
     //box-shadow: 0px 2px 13px 0px rgba(43, 184, 209, 0.48);
-    background: var(--orange, linear-gradient(87deg, #E2A300 4.47%, #E29500 95.53%));
+    background: linear-gradient(87deg, #E2A300 4.47%, #E29500 95.53%);
     box-shadow: 0px 2px 13px 0px rgba(226, 158, 0, 0.48);
     text-transform: uppercase;
     cursor: pointer;

@@ -22,10 +22,11 @@ export const Main = () => {
                     <WrapperImage>
                         <Avatar src={photo} alt=''/>
                         <MainEllipse src={ellipse} alt=''/>
-                     <Circle src={'reactGray'} top={'15%' } left={'7%'}/>
-                     <Circle src={'htmlGray'} top={'38%' } left={'-2%'}/>
-                     <Circle src={'cssGray'} top={'63%' } left={'2%'}/>
-                     <Circle src={'figmaGray'} top={'10%' } right={'13%'}/>
+
+                        <Circle src={'reactGray'} top={'14%' } left={'8%'}/>
+                        <Circle src={'htmlGray'} top={'41%' } left={'-4%'}/>
+                        <Circle src={'cssGray'} top={'68%' } left={'1%'}/>
+                        <Circle src={'figmaGray'} top={'12%' } right={'13%'}/>
                     </WrapperImage>
                 </FlexWrapper>
             </Container>
@@ -111,9 +112,9 @@ const StyledBtn = styled.button`
     font-weight: 700;
     border-radius: 6px;
     //background: linear-gradient(87deg, #00C4F0 4.47%, #00C4F0 95.53%);
-    //box-shadow: 0px 2px 13px 0px rgba(43, 184, 209, 0.48);
+    //box-shadow: 0 2px 13px 0 rgba(43, 184, 209, 0.48);
     background: linear-gradient(87deg, #E2A300 4.47%, #E29500 95.53%);
-    box-shadow: 0px 2px 13px 0px rgba(226, 158, 0, 0.48);
+    box-shadow: 0 2px 13px 0 rgba(226, 158, 0, 0.48);
     text-transform: uppercase;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;

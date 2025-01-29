@@ -7,9 +7,10 @@ type PropsType = {
     top?: string;
     left?: string;
     right?: string;
-    width: string;
-    height: string;
-    viewBox: string;
+    width?: string;
+    height?: string;
+    viewBox?: string;
+
 
 
 }
@@ -20,8 +21,6 @@ export const Circle =(props:PropsType)=> {
         </StyledCircle>
     )
 }
-
-
 
 const StyledCircle: FC<PropsType> = styled.div`
     display: flex;

@@ -46,7 +46,7 @@ const WrapperBlock = styled.div`
     display: flex;
     flex-direction: column;
     text-align: start;
-    gap: 10px;
+    gap: 27px;
     //border: 1px solid red;
     
 `
@@ -54,18 +54,19 @@ const Text = styled.span`
     text-transform: uppercase;
     font-size: 48px;
     font-weight: 600;
+    line-height: 0.5;
     opacity: 0.7;
 `
 const Name = styled.span`
     display: flex;
     font-size: 72px;
     font-weight: 700;
+    line-height: 1;
     text-transform: uppercase;
     opacity: 0.7;
 `
 const StyledText = styled.p`
     min-width: 430px;
-    height: 74px;
     font-size: 16px;
     font-weight: 300;
     line-height: normal;
@@ -76,6 +77,7 @@ const StyledText = styled.p`
 `
 const MainTitle = styled.h1`
     text-transform: uppercase;
+    line-height: 1;
     opacity: 0.7;
 `
 
@@ -86,7 +88,7 @@ const WrapperImage = styled.div`
     align-self: flex-end;
     position: relative;
     left: 80px;
-    border: 1px solid red;
+    //border: 1px solid red;
 `
 
 const Avatar = styled.img`

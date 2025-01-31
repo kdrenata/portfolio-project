@@ -29,7 +29,7 @@ export const Work = (props: WorkPropsType) => {
 };
 const StyledWork = styled.div`
     max-width: 970px;
-    background-color: rgb(66,65,65);
+    background-color: rgb(50,49,49);
     box-shadow: 0px 4px 6px 1px rgb(30, 30, 30);
     border-radius: 29px;
     width: 970px;

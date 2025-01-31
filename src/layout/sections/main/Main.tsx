@@ -23,10 +23,10 @@ export const Main = () => {
                         <Avatar src={photo} alt=''/>
                         <MainEllipse src={ellipse} alt=''/>
 
-                        <Circle src={'reactGray'} top={'14%' } left={'8%'}/>
+                        <Circle src={'reactGray'} top={'17%' } left={'9%'}/>
                         <Circle src={'htmlGray'} top={'41%' } left={'-4%'}/>
                         <Circle src={'cssGray'} top={'68%' } left={'1%'}/>
-                        <Circle src={'figmaGray'} top={'12%' } right={'13%'}/>
+                        <Circle src={'figmaGray'} top={'14%' } right={'13%'}/>
                     </WrapperImage>
                 </FlexWrapper>
             </Container>
@@ -103,7 +103,7 @@ const Avatar = styled.img`
 const MainEllipse = styled.img`
     object-fit: cover;
     position: absolute;
-    top: 53%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 `

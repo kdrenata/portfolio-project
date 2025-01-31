@@ -17,7 +17,7 @@ type PropsType = {
 export const Circle =(props:PropsType)=> {
     return (
         <StyledCircle {...props}>
-            <Icon iconId={props.src} width={'82'} height={'95'} viewBox={'-20 -20 150 150'}/>
+            <Icon iconId={props.src} width={'82'} height={'95'} viewBox={'-24 -24 150 150'}/>
         </StyledCircle>
     )
 }

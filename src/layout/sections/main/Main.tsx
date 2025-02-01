@@ -111,7 +111,8 @@ const StyledBtn = styled.button`
     width: 200px;
     height: 47px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
+    color: #fff;
     border-radius: 6px;
     //background: linear-gradient(87deg, #00C4F0 4.47%, #00C4F0 95.53%);
     //box-shadow: 0 2px 13px 0 rgba(43, 184, 209, 0.48);

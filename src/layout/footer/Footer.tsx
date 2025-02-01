@@ -93,4 +93,15 @@ const Btn = styled.button`
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(248, 132, 14, 0.8);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 `

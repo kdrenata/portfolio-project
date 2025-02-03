@@ -92,12 +92,18 @@ const WrapperImage = styled.div`
 `
 
 const Avatar = styled.img`
-    height: 100%;
+    width: 456px;
+    height: 634px;
+    //height: 100%;
     flex-shrink: 0;
     object-fit: cover;
     
     position: relative;
     z-index: 1;
+    
+    @media ${theme.media.mobile} {
+        
+    }
 `
 
 const MainEllipse = styled.img`

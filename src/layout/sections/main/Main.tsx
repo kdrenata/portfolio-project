@@ -23,10 +23,10 @@ export const Main = () => {
                         <Avatar src={photo} alt=''/>
                         <MainEllipse src={ellipse} alt=''/>
 
-                        <Circle src={'reactGray'} top={'17%' } left={'9%'}/>
-                        <Circle src={'htmlGray'} top={'41%' } left={'-4%'}/>
-                        <Circle src={'cssGray'} top={'68%' } left={'1%'}/>
-                        <Circle src={'figmaGray'} top={'14%' } right={'13%'}/>
+                        <Circle src={'reactGray'} top={'18%' } left={'9%'}/>
+                        <Circle src={'htmlGray'} top={'43%' } left={'-4%'}/>
+                        <Circle src={'cssGray'} top={'70%' } left={'0.5%'}/>
+                        <Circle src={'figmaGray'} top={'14%' } right={'15%'}/>
                     </WrapperImage>
                 </FlexWrapper>
             </Container>
@@ -35,7 +35,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-    min-height: 780px;
+    min-height: 788px;
     background-color: ${theme.colors.secondaryBg};
     display: flex;
     justify-content: space-between;
@@ -83,7 +83,7 @@ const MainTitle = styled.h1`
 
 const WrapperImage = styled.div`
     width: 632px;
-    height: 674px;
+    height: 676px;
     bottom: -100px;
     align-self: flex-end;
     position: relative;
@@ -92,8 +92,8 @@ const WrapperImage = styled.div`
 `
 
 const Avatar = styled.img`
-    width: 456px;
-    height: 634px;
+    width: 466px;
+    height: 674px;
     //height: 100%;
     flex-shrink: 0;
     object-fit: cover;
@@ -105,11 +105,10 @@ const Avatar = styled.img`
         
     }
 `
-
 const MainEllipse = styled.img`
     object-fit: cover;
     position: absolute;
-    top: 55%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
 `

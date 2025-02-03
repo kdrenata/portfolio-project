@@ -109,7 +109,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             content: "";
             display: block;
             width: 24px;
-            height: 5px;
+            height: 3px;
             border-radius: 2px;
             background-color: ${theme.colors.accentBg};
             position: absolute;

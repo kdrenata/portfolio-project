@@ -33,9 +33,15 @@ const StyledWork = styled.div`
     box-shadow: 0px 4px 6px 1px rgb(30, 30, 30);
     border-radius: 29px;
     width: 970px;
-    height: 600px;
+    min-height: 600px;
     margin: 50px;
     display: flex;
+    
+    @media ${theme.media.tablet} {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   
 
 `
 const Image = styled.img`

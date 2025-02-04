@@ -4,10 +4,15 @@ import styledTwo from '../../../assets/images/photo2.webp';
 import styledTree from '../../../assets/images/photo3_1.webp';
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Container} from "../../../components/Container.tsx";
+import {theme} from "../../../styles/Theme.tsx";
+import {useResize} from "../../../hooks/useResize.tsx";
 
 
 
 export const Profile = () => {
+    const windowSize = useResize();
+    const tabletSize = 768;
+
     return (
         <StyledProfile id={'profile'}>
             <Container>
@@ -18,7 +23,7 @@ export const Profile = () => {
                                 <StyledOne src={styledOne} alt=''/>
                             </BorderPhoto>
 
-                            <BorderPhoto right={'35px'} bottom={'-43px'}>
+                            <BorderPhoto right={'35px'} bottom={windowSize.width > tabletSize ? '-43px' : '0'} top={windowSize.width > tabletSize ? '0' : '-25px'}>
                                 <StyledTwo src={styledTwo} alt=''/>
                             </BorderPhoto>
                         </StyledLeft>
@@ -52,6 +57,11 @@ const ProfileWrapper = styled.div`
     display: flex;
     position: relative;
     right: -5%;
+
+    @media ${theme.media.tablet} {
+        flex-direction: column-reverse;
+        right: 0;
+    }
 `
 const StyledLeft = styled.div`
     display: flex;
@@ -73,6 +83,10 @@ const StyledLeft = styled.div`
         border-radius: 792px;
         border: 89px solid #E4E4E4;
         box-shadow: 0 4px 70px 0 rgba(255, 255, 255, 0.25);
+        
+        @media ${theme.media.tablet} {
+            display: none;
+        }
     }
     
 `
@@ -96,6 +110,18 @@ const StyledCenter = styled.div`
         border-radius: 356px;
         border: 34px solid #E2A200;
         box-shadow: 0 4px 70px 0 rgba(226, 162, 0, 0.25);
+
+        @media ${theme.media.tablet} {
+            top: 117%;
+            right: 47px;
+        }
+        
+        @media ${theme.media.mobile} {
+            top: 105%;
+            //bottom: -32%;
+            right: -22%;
+        }
+        
     }
 `
 const StyledRight = styled.div`
@@ -118,18 +144,30 @@ const StyledRight = styled.div`
         border-radius: 486px;
         border: 55px solid #00C4F0;
         box-shadow: 0 4px 70px 0 rgba(0, 193, 236, 0.25);
+
+        @media ${theme.media.tablet} {
+            display: none;
+        }
     }
 `
-const BorderPhoto = styled.div<{right?: string, left?: string, bottom?: string }>`
+const BorderPhoto = styled.div<{right?: string, left?: string, bottom?: string, top?: string }>`
     right: ${props => props.right || 'auto'};
     left: ${props => props.left || 'auto'};
     bottom: ${props => props.bottom || 'auto'};
+    top: ${props => props.top || 'auto'};
     padding: 29px;
     border-radius: 14px;
     background-color: #2C2C2C;
     box-shadow: 1px 4px 6px 5px #2C2C2C;
     position: relative;
     z-index: 3;
+
+    @media ${theme.media.tablet} {
+        //display: none;
+        &:first-of-type {
+            display: none;
+        }
+    }
 `
 
 const SectionTitle = styled.h2`
@@ -155,12 +193,20 @@ const StyledText = styled.p`
     font-size: 17px;
     position: relative;
     z-index: 1;
+
+    @media ${theme.media.tablet} {
+        min-height: auto;
+    }
 `
 const StyledOne= styled.img`
     width: 272px;
     height: 320px;
     object-fit: cover;
     box-shadow: 0 0 0 6px #686868;
+
+    @media ${theme.media.tablet} {
+        display: none;
+    }
 
 `
 const StyledTwo = styled.img`
@@ -169,11 +215,17 @@ const StyledTwo = styled.img`
     object-fit: cover;
     box-shadow: 0 0 0 6px #686868;
     
+    
+    
 `
 const StyledTree = styled.img`
     width: 287px;
     height: 427px;
     object-fit: cover;
     box-shadow: 0 0 0 6px #686868;
+
+    @media ${theme.media.tablet} {
+        display: none;
+    }
     
 `

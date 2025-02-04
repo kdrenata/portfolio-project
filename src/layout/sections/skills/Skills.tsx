@@ -31,4 +31,11 @@ const StyledSkills = styled.section`
     color: ${theme.colors.accentBg};
     position: relative;
     
+    ${FlexWrapper} {
+        @media ${theme.media.tablet} {
+            justify-content: center;
+            column-gap: 50px;
+        }
+    }
+    
 `

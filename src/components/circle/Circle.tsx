@@ -1,6 +1,7 @@
 import {Icon} from "../icon/Icon.tsx";
 import {FC} from "react";
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.tsx";
 
 type PropsType = {
     src: string;
@@ -35,4 +36,9 @@ const StyledCircle: FC<PropsType> = styled.div`
     z-index: 2;
     border-radius: 50%;
     background: rgb(50,49,49);
+
+    @media ${theme.media.mobile} {
+        width: 50px;
+        height: 50px;
+    }
 `

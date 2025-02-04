@@ -49,6 +49,13 @@ const WrapperButton = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
+    @media ${theme.media.mobile} {
+        top: auto;
+        justify-content: center;
+        column-gap: 50px;
+        bottom: -6%;
+    }
 `
 const Btn = styled.button`
     display: flex;

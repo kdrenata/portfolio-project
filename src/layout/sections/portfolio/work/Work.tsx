@@ -36,26 +36,28 @@ const StyledWork = styled.div`
     min-height: 600px;
     margin: 50px;
     display: flex;
+    justify-content: space-around;
     
     @media ${theme.media.tablet} {
         flex-wrap: wrap;
         justify-content: center;
     }
    
-
 `
 const Image = styled.img`
     object-fit: cover;
     border-radius: 29px;
     margin: 50px;
+    
 `
 const WrapperWork = styled.div`
     color: ${theme.colors.font};
     margin: 0 50px;
+    width: 296px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
     justify-content: center;
+    gap: 25px;
     
 `
 const Title = styled.h3`
@@ -63,7 +65,6 @@ const Title = styled.h3`
     font-weight: 300;
     text-align: center;
     //opacity: 0.7;
-    
 `
 const Text = styled.p`
     font-size: 15px;

@@ -178,7 +178,12 @@ const SectionTitle = styled.h2`
     bottom: -55px;
     z-index: 2;
     padding-left: 63px;
-    opacity: 0.7;
+    //opacity: 0.7;
+    
+    @media ${theme.media.mobile} {
+        padding-left: 16px;
+    }
+    
 `
 const StyledText = styled.p`
     display: flex;
@@ -190,12 +195,16 @@ const StyledText = styled.p`
     letter-spacing: 0.2px;
     padding: 63px;
     min-height: 800px;
-    font-size: 17px;
+    font-size: 15px;
     position: relative;
     z-index: 1;
 
     @media ${theme.media.tablet} {
         min-height: auto;
+    }
+    @media ${theme.media.mobile} {
+        min-width: 344px;
+        padding: 60px 16px;
     }
 `
 const StyledOne= styled.img`

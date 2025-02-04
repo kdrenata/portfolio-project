@@ -31,10 +31,10 @@ export const Main = () => {
                         </WrapperAvatar>
                         <MainEllipse src={ellipse} alt=''/>
 
-                        <Circle src={'reactGray'} top={windowSize.width > mobileSize ? '18%' : '9%'} left={'9%'} />
-                        <Circle src={'htmlGray'} top={windowSize.width > mobileSize ? '43%' : '35%'} left={windowSize.width > mobileSize ? '-4%' : '-1%'}/>
-                        <Circle src={'cssGray'} top={windowSize.width > mobileSize ? '70%' : '59%'} left={windowSize.width > mobileSize ? '0.5%' : '4%'}/>
-                        <Circle src={'figmaGray'} top={windowSize.width > mobileSize ? '14%' : '2%' } right={windowSize.width > mobileSize ? '15%' : '8%'}/>
+                        <Circle src={'reactGray'} top={windowSize.width > mobileSize ? '18%' : '12%'} left={'9%'} />
+                        <Circle src={'htmlGray'} top={windowSize.width > mobileSize ? '43%' : '40%'} left={windowSize.width > mobileSize ? '-4%' : '-5%'}/>
+                        <Circle src={'cssGray'} top={windowSize.width > mobileSize ? '70%' : '70%'} left={windowSize.width > mobileSize ? '0.5%' : '1%'}/>
+                        <Circle src={'figmaGray'} top={windowSize.width > mobileSize ? '14%' : '10%' } right={windowSize.width > mobileSize ? '15%' : '14%'}/>
                     </WrapperImage>
                 </FlexWrapper>
             </Container>
@@ -112,7 +112,7 @@ const MainTitle = styled.h1`
 const WrapperImage = styled.div`
     width: 632px;
     height: 676px;
-    margin-top: 30px;
+    //margin-top: 30px;
     bottom: -100px;
     align-self: flex-end;
     position: relative;
@@ -142,15 +142,13 @@ const WrapperAvatar = styled.div`
         @media ${theme.media.mobile} {
             width: 315px;
             height: 315px;
-            border-radius: 315px;
+            border-radius: 50%;
             border: 40px solid #00C4F0;
-            top: 0;
-            right: 0;
+            top: 10%;
+            right: 5%;
         }
-        
     }
 `
-
 const Avatar = styled.img`
     width: 466px;
     height: 674px;

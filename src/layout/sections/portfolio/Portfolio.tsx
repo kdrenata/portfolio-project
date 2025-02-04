@@ -39,7 +39,7 @@ const StyledPortfolioTitle = styled.h2`
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    opacity: 0.7;
+    //opacity: 0.7;
     
 `
 const WrapperButton = styled.div`

@@ -36,6 +36,9 @@ const StyledSkills = styled.section`
             justify-content: center;
             column-gap: 50px;
         }
+        @media ${theme.media.mobile} {
+            column-gap: 20px;
+        }
     }
     
 `

@@ -31,7 +31,7 @@ const StyledSkill = styled.div`
     padding: 50px;
     margin: 30px 0;
     border-radius: 25px;
-    box-shadow: 0px 4px 6px 1px #2C2C2C;
+    box-shadow: 0 4px 6px 1px #2C2C2C;
 `
 const SkillTitle = styled.h3`
     margin: 50px 0 0 0;

@@ -54,6 +54,13 @@ export const Profile = () => {
 const StyledProfile = styled.section`
     padding: 100px 0 300px;
     position: relative;
+
+    @media ${theme.media.tablet} {
+        padding: 0 0 120px;
+    }
+    @media ${theme.media.mobile} {
+        padding: 0 0 40px;
+    }
 `
 const ProfileWrapper = styled.div`
     display: flex;

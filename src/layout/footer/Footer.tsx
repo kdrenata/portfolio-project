@@ -88,6 +88,7 @@ const SocialLink = styled.a`
 
     @media ${theme.media.mobile} {
         align-items: center;
+        //align-self: center;
         gap: 57px;
     }
 `

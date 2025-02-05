@@ -43,7 +43,6 @@ const StyledPortfolioTitle = styled.h2`
     
 `
 const WrapperButton = styled.div`
-    flex-shrink: 0;
     position: absolute;
     top: 50%;
     display: flex;
@@ -54,7 +53,7 @@ const WrapperButton = styled.div`
         top: auto;
         justify-content: center;
         column-gap: 50px;
-        bottom: -6%;
+        bottom: -4.5%;
     }
 `
 const Btn = styled.button`

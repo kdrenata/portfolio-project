@@ -25,7 +25,7 @@ export const Profile = () => {
 
                             <BorderPhoto right={'35px'}
                                          bottom={windowSize.width > tabletSize ? '-43px' : '0'}
-                                         top={windowSize.width > tabletSize ? '0' : '-44px'}>
+                                         top={windowSize.width > tabletSize ? '44px' : '-44px'}>
                                 <StyledTwo src={styledTwo} alt=''/>
                             </BorderPhoto>
                         </StyledLeft>

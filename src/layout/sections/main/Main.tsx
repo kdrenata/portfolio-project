@@ -12,7 +12,7 @@ import {useResize} from "../../../hooks/useResize.tsx";
 export const Main = () => {
     const windowSize = useResize();
     const mobileSize = 567;
-    const tabletSize = 768;
+    // const tabletSize = 768;
 
     return (
         <StyledMain>

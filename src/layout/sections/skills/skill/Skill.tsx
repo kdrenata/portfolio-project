@@ -32,7 +32,7 @@ const StyledSkill = styled.div`
     padding: 50px;
     margin: 30px 0;
     border-radius: 25px;
-    box-shadow: 0 4px 6px 1px #101010;
+    box-shadow: 0 4px 6px 1px #171717;
 
     @media ${theme.media.mobile} {
         width: 45%;

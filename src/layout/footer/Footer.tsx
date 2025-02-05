@@ -49,13 +49,22 @@ const StyledMenuWrapper = styled.div`
     justify-content: space-evenly;
     align-items: center;
     margin: 50px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @media ${theme.media.mobile} {
+        //margin: 50px 15px 30px;
+        flex-direction: column;
+        align-items: start;
+        gap: 50px;
+    }
 `
 
 const StyledFooterMenu = styled.nav`
     display: flex;
     flex-direction: column;
     gap: 18px;
-    opacity: 0.5;
+    opacity: 0.9;
     
 `
 const StyledContacts = styled.div`
@@ -63,7 +72,7 @@ const StyledContacts = styled.div`
     justify-content: center;
     flex-direction: column;
     gap: 18px;
-    opacity: 0.3;
+    opacity: 0.5;
     cursor: pointer;
 `
 const Contact = styled.h3`
@@ -76,13 +85,21 @@ const SocialLink = styled.a`
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
+
+    @media ${theme.media.mobile} {
+        align-items: center;
+        gap: 57px;
+    }
 `
 
 const Copyright = styled.small`
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
     display: flex;
     justify-content: flex-end;
     text-align: right;
-    opacity: 0.3;
+    opacity: 0.5;
     
 `
 const Btn = styled.button`

@@ -1,6 +1,7 @@
 import {Icon} from "../../../../components/icon/Icon.tsx";
 import styled from "styled-components";
 import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
+import {theme} from "../../../../styles/Theme.tsx";
 
 type SkillPropsType = {
     iconId: string;
@@ -31,8 +32,20 @@ const StyledSkill = styled.div`
     padding: 50px;
     margin: 30px 0;
     border-radius: 25px;
-    box-shadow: 0 4px 6px 1px #2C2C2C;
+    box-shadow: 0 4px 6px 1px #101010;
+
+    @media ${theme.media.mobile} {
+        width: 45%;
+        height: fit-content;
+        padding: 12px 16px;
+    }
+
 `
 const SkillTitle = styled.h3`
     margin: 50px 0 0 0;
+    
+    @media ${theme.media.mobile} {
+        margin: 16px 0 16px;
+    }
+
 `

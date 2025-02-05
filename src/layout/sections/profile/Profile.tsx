@@ -23,7 +23,9 @@ export const Profile = () => {
                                 <StyledOne src={styledOne} alt=''/>
                             </BorderPhoto>
 
-                            <BorderPhoto right={'35px'} bottom={windowSize.width > tabletSize ? '-43px' : '0'} top={windowSize.width > tabletSize ? '0' : '-25px'}>
+                            <BorderPhoto right={'35px'}
+                                         bottom={windowSize.width > tabletSize ? '-43px' : '0'}
+                                         top={windowSize.width > tabletSize ? '0' : '-44px'}>
                                 <StyledTwo src={styledTwo} alt=''/>
                             </BorderPhoto>
                         </StyledLeft>
@@ -62,6 +64,9 @@ const ProfileWrapper = styled.div`
         flex-direction: column-reverse;
         right: 0;
     }
+
+    @media ${theme.media.mobile} {
+    }
 `
 const StyledLeft = styled.div`
     display: flex;
@@ -77,7 +82,7 @@ const StyledLeft = styled.div`
         width: 792px;
         height: 792px;
         position: absolute;
-        top: 100px;
+        top: 85px;
         right: -190px;
         //border-radius: 50%;
         border-radius: 792px;
@@ -120,6 +125,7 @@ const StyledCenter = styled.div`
             top: 105%;
             //bottom: -32%;
             right: -22%;
+            
         }
         
     }
@@ -163,9 +169,13 @@ const BorderPhoto = styled.div<{right?: string, left?: string, bottom?: string, 
     z-index: 3;
 
     @media ${theme.media.tablet} {
-        //display: none;
         &:first-of-type {
             display: none;
+        }
+    }
+    @media ${theme.media.mobile} {
+        &:nth-of-type(2) {
+            box-shadow: none;
         }
     }
 `
@@ -195,7 +205,7 @@ const StyledText = styled.p`
     letter-spacing: 0.2px;
     padding: 63px;
     min-height: 800px;
-    font-size: 15px;
+    font-size: 17px;
     position: relative;
     z-index: 1;
 
@@ -223,7 +233,6 @@ const StyledTwo = styled.img`
     height: 325px;
     object-fit: cover;
     box-shadow: 0 0 0 6px #686868;
-    
     
     
 `

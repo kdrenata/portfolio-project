@@ -75,7 +75,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     z-index: 9999999;
     position: absolute;
     //right: -15px;
-    top: 0;
+    top: 1px;
     left: 90%;
 
     span {
@@ -119,6 +119,17 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
                 transform: rotate(45deg) translateY(0);
                 width: 36px;
             `}
+    }
+        @media ${theme.media.tablet} {
+            right: 5px;
+            bottom: 8px;
+        }
+        
+        
+        @media ${theme.media.mobile} {
+            right: 15px;
+            bottom: 9px;
+        }
     }
 `
 

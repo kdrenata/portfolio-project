@@ -31,10 +31,10 @@ export const Main = () => {
                         </WrapperAvatar>
                         <MainEllipse src={ellipse} alt=''/>
 
-                        <Circle src={'reactGray'} top={windowSize.width > mobileSize ? '18%' : '12%'} left={'9%'} />
+                        <Circle src={'reactGray'} top={windowSize.width > mobileSize ? '18%' : '12%'} left={'8%'} />
                         <Circle src={'htmlGray'} top={windowSize.width > mobileSize ? '43%' : '40%'} left={windowSize.width > mobileSize ? '-4%' : '-5%'}/>
                         <Circle src={'cssGray'} top={windowSize.width > mobileSize ? '70%' : '70%'} left={windowSize.width > mobileSize ? '0.5%' : '1%'}/>
-                        <Circle src={'figmaGray'} top={windowSize.width > mobileSize ? '14%' : '10%' } right={windowSize.width > mobileSize ? '15%' : '14%'}/>
+                        <Circle src={'figmaGray'} top={windowSize.width > mobileSize ? '14%' : '7%' } right={windowSize.width > mobileSize ? '15%' : '12%'}/>
                     </WrapperImage>
                 </FlexWrapper>
             </Container>
@@ -145,7 +145,7 @@ const WrapperAvatar = styled.div`
             border-radius: 50%;
             border: 40px solid #00C4F0;
             top: 10%;
-            right: 5%;
+            right: 3%;
         }
     }
 `
@@ -160,8 +160,10 @@ const Avatar = styled.img`
     z-index: 1;
     
     @media ${theme.media.mobile} {
-        width: 255px;
-        height: 363px;
+        width: 260px;
+        height: 342px;
+        position: absolute;
+        right: 10%;
     }
     
 `

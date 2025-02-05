@@ -38,7 +38,7 @@ const StyledCircle: FC<PropsType> = styled.div`
     background: rgb(50,49,49);
 
     @media ${theme.media.mobile} {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 `

@@ -76,3 +76,11 @@ const Btn = styled.button`
         transform: scale(0.95);
     }
 `
+
+// function artempush(array, ...elements) {
+//     array.push(...elements);
+// }
+//
+// let arr = ['a', 'b', 'c'];
+// artempush(arr, 'd', 'e', 'f');
+// console.log(arr);

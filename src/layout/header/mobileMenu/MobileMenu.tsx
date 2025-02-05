@@ -69,24 +69,23 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
 
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
-  /*  position: fixed;*/
+    //position: fixed;
     width: 60px;
     height: 60px;
     z-index: 9999999;
     position: absolute;
-    //right: -15px;
     top: 1px;
     left: 90%;
 
     span {
         display: block;
         width: 36px;
-        height: 5px;
+        height: 4px;
         border-radius: 2px;
         background-color: ${theme.colors.accentBg};
         position: relative;
         
-        ${props => props.isOpen && css<{isOpen: boolean}> `
+        ${props => props.isOpen && css<{isOpen: boolean}>`
             background-color: rgba(0, 196, 240, 0);
         `}
         
@@ -94,7 +93,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             content: "";
             display: block;
             width: 36px;
-            height: 5px;
+            height: 4px;
             border-radius: 2px;
             background-color: ${theme.colors.accentBg};
             position: absolute;
@@ -109,7 +108,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             content: "";
             display: block;
             width: 24px;
-            height: 5px;
+            height: 4px;
             border-radius: 2px;
             background-color: ${theme.colors.accentBg};
             position: absolute;

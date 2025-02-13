@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme.tsx";
 import {Icon} from "../../../../components/icon/Icon.tsx";
-import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../../components/FlexWrapper.ts";
 
 type WorkPropsType = {
     title: string;

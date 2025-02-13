@@ -1,6 +1,6 @@
 import {Icon} from "../../../../components/icon/Icon.tsx";
 import styled from "styled-components";
-import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../../components/FlexWrapper.ts";
 import {theme} from "../../../../styles/Theme.tsx";
 
 type SkillPropsType = {

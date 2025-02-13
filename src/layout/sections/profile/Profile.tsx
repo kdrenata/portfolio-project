@@ -2,8 +2,8 @@ import styled from "styled-components";
 import styledOne from '../../../assets/images/photo1_1.webp';
 import styledTwo from '../../../assets/images/photo2.webp';
 import styledTree from '../../../assets/images/photo3_1.webp';
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
-import {Container} from "../../../components/Container.tsx";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
+import {Container} from "../../../components/Container.ts";
 import {theme} from "../../../styles/Theme.tsx";
 import {useResize} from "../../../hooks/useResize.tsx";
 

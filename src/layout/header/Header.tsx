@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo.tsx";
-import {Container} from "../../components/Container.tsx";
-import {FlexWrapper} from "../../components/FlexWrapper.tsx";
+import {Container} from "../../components/Container.ts";
+import {FlexWrapper} from "../../components/FlexWrapper.ts";
 import {HeaderMenu} from "./headerMenu/HeaderMenu.tsx";
 import {MobileMenu} from "./mobileMenu/MobileMenu.tsx";
 

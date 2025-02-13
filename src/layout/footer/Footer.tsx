@@ -2,8 +2,8 @@ import styled from "styled-components";
 import {Icon} from "../../components/icon/Icon.tsx";
 import {Menu} from "../../components/menu/Menu.tsx";
 import {theme} from "../../styles/Theme.tsx";
-import {Container} from "../../components/Container.tsx";
-import {FlexWrapper} from "../../components/FlexWrapper.tsx";
+import {Container} from "../../components/Container.ts";
+import {FlexWrapper} from "../../components/FlexWrapper.ts";
 
 const footerItems = ['Home', 'About me', 'Portfolio', 'Contact']
 

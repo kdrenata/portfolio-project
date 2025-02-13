@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {Skill} from "./skill/Skill.tsx";
-import {Container} from "../../../components/Container.tsx";
+import {Container} from "../../../components/Container.ts";
 import {theme} from "../../../styles/Theme.tsx";
 
 export const Skills = () => {
